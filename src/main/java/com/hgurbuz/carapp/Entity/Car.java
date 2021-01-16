@@ -19,9 +19,9 @@ public class Car {
 
     }
 
-    public Car(long id, String brand, String model, String color, String registerNumber, int year, int price)
+    public Car( String brand, String model, String color, String registerNumber, int year, int price)
     {
-        this.id = id;
+
         this.brand = brand;
         this.model = model;
         this.color = color;
