@@ -1,9 +1,7 @@
 package com.hgurbuz.carapp.Entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.List;
 
 @Entity
 public class Owner {
@@ -11,6 +9,9 @@ public class Owner {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long ownerId;
     private String firstname, lastname;
+
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "owner")
+    private List<Car> cars;
 
     public Owner()
     {
@@ -50,5 +51,15 @@ public class Owner {
     public void setLastname(String lastname)
     {
         this.lastname = lastname;
+    }
+
+    public List<Car> getCars()
+    {
+        return cars;
+    }
+
+    public void setCars(List<Car> cars)
+    {
+        this.cars = cars;
     }
 }
