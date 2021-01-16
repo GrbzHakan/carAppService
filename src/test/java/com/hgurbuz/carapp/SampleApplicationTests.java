@@ -1,4 +1,4 @@
-package com.hgurbuz.sample;
+package com.hgurbuz.carapp;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

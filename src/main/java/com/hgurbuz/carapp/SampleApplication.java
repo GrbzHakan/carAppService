@@ -1,4 +1,4 @@
-package com.hgurbuz.sample;
+package com.hgurbuz.carapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
